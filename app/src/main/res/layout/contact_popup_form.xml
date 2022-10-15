@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <Button
+        android:drawableRight="@drawable/icon_popoup_cancel"
+        android:id="@+id/btn_cust_popup_cancle"
+        android:layout_width="match_parent"
+        android:text="Contact Information"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:background="@drawable/edit_text_border"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/edit_linaer"
+        >
+        <!-- <ImageView
+             android:id="@+id/img_date"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:src="@drawable/calendar"
+             />-->
+
+        <LinearLayout
+            android:background="@color/purple_700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="STD  Code :"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:singleLine="true"
+                    android:background="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:id="@+id/edit_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:hint="Phone Number"
+                    android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/purple_700"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:hint="Phone Number:"
+                    android:singleLine="true"/>
+                <TextView
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:id="@+id/edit_std"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:hint="Phone Number"
+                    android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>
